@@ -1,0 +1,20 @@
+#
+# com.heilaiq.echonetlite.provider PROVIDER BUNDLE
+#
+
+-buildpath: \
+	osgi.cmpn,\
+	com.heilaiq.api;version=latest,\
+	com.heilaiq.lib.configuration,\
+	jars/OpenECHO.jar;version=file,\
+	slf4j.api
+	
+-includeresource: \
+    @jars/OpenECHO.jar
+    
+
+-testpath: \
+    osgi.enroute.junit.wrapper, \
+    osgi.enroute.hamcrest.wrapper, \
+    assertj-core
+
